@@ -1,0 +1,326 @@
+/* Estilos generales */
+body {
+    background-color: #FFF8E1; /* Beige suave */
+    color: #3E2723; /* Marrón oscuro */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #D19F70; /* Marrón suave */
+    color: #FFF8E1; /* Beige suave */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #FFF8E1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3E2723; /* Marrón oscuro */
+}
+
+/* Sección de héroe (bienvenida) */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('images/cafe-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFF8E1;
+    border-bottom: 5px solid #3E2723;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section a {
+    background-color: #3E2723;
+    color: #FFF8E1;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section a:hover {
+    background-color: #D19F70; /* Marrón suave */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Menú de productos */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #FFF8E1;
+}
+
+.item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #6A4F4B;
+}
+
+.item button {
+    background-color: #D19F70;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #3E2723;
+}
+
+/* Sección de reservaciones */
+.reservations {
+    background-image: url('images/reservar.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFF8E1;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.reservations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.reservations form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.reservations input, .reservations button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.reservations button {
+    background-color: #D19F70;
+    color: #FFF8E1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservations button:hover {
+    background-color: #3E2723;
+}
+
+/* Footer */
+footer {
+    background-color: #3E2723;
+    color: #FFF8E1;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #FFF8E1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer .social-media a:hover {
+    color: #D19F70;
+}
+/* Estilos generales */
+body {
+    background-color: #FFF8E1; /* Beige suave */
+    color: #3E2723; /* Marrón oscuro */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #D19F70; /* Marrón suave */
+    color: #FFF8E1; /* Beige suave */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #FFF8E1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3E2723; /* Marrón oscuro */
+}
+
+/* Sección de Servicios */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3E2723;
+    margin-bottom: 40px;
+}
+
+.service {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.1);
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    color: #3E2723;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #6A4F4B;
+}
+
+/* Footer */
+footer {
+    background-color: #3E2723;
+    color: #FFF8E1;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #FFF8E1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer .social-media a:hover {
+    color: #D19F70;
+}
+/* Estilo para el logo */
+.logo img {
+    max-width: 100px; /* Ajusta el tamaño aquí */
+    height: auto; /* Mantiene las proporciones originales */
+}

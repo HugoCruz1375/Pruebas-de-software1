@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Dulce Trago</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Dulce Trago.png" alt="Dulce Trago"> <!-- Logo -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#reservar">Reservaciones</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de bienvenida (hero) -->
+        <section class="hero-section">
+            <h1>Bienvenidos a Dulce Trago</h1>
+            <p>Disfruta de los mejores cafés y postres, hechos con amor y dedicación.</p>
+            <a href="#reservar" class="btn-cta">Haz tu reservación</a>
+        </section>
+
+        <!-- Menú de productos -->
+        <h2>Menú</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="Café Espresso.jpeg" alt="Café Espresso">
+                <h3>Café Espresso</h3>
+                <p>Intenso y aromático.</p>
+                <p>$40 MXN</p>
+                <button class="add-to-cart" data-nombre="Café Espresso" data-precio="40">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="Capuchino.jpeg" alt="Capuchino">
+                <h3>Capuchino</h3>
+                <p>Perfecto balance entre café y leche.</p>
+                <p>$50 MXN</p>
+                <button class="add-to-cart" data-nombre="Capuchino" data-precio="50">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="Pastel de Chocolate.jpeg" alt="Pastel de Chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>Exquisito pastel hecho con chocolate oscuro.</p>
+                <p>$60 MXN</p>
+                <button class="add-to-cart" data-nombre="Pastel de Chocolate" data-precio="60">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Apartado de Reservaciones -->
+        <section id="reservar" class="reservations">
+            <h2>Haz tu Reservación</h2>
+            <p>Reserva una mesa para disfrutar de nuestra deliciosa oferta en el lugar.</p>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" name="personas" min="1" required>
+
+                <button type="submit" class="btn-cta">Reservar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Dulce Trago. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
